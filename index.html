@@ -8,17 +8,18 @@
 <body>
     <div class="mypanel"></div>
 
-    <script>
-    $.getJSON('http://time.jsontest.com', function(data) {
-        
-        var text = `Date: ${data.date}<br>
-                    Time: ${data.time}<br>
-                    Unix time: ${data.milliseconds_since_epoch}`
-                    
-        
-        $(".mypanel").html(text);
+<script>
+    levNum = 1;
+    url = "https://rankings.the-elite.net/ajax/stage/"+(levNum).toString()+"/1540323368";	
+
+    $.getJSON(url, function(data) {
+
+    
+
+
+    $(".mypanel").html(data);
     });
-    </script>
+</script>
     
 </body>
 </html>
