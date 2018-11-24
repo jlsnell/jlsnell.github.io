@@ -310,6 +310,7 @@ function getPointsForTime(lev,dif,time) {
     timeVPointsLevel=timeVPointsTotal[lev];
     timeVPointsDif=timeVPointsLevel[dif];
     points = 0;
+    if(time < timeVPointsDif[0][0]) return 100;
     for (c = 0; c < timeVPointsDif.length; c++)
     	if(timeVPointsDif[c][0] == time) return timeVPointsDif[c][1];
 	return 0;
