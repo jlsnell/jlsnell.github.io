@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+td {
+    border: 1px solid black;
+    height: 21px;
+}
+</style>
+</head>
+<body>
+
+<table><td>
+
+<table style="width:250px" border="1px solid black" id = "myTable">
+  <tr>
+  	<th width = 70%>Level</th>
+    <th>Agent</th>
+    <th>SA</th> 
+    <th>00A</th>
+  </tr>
+<tr>
+<td>Dam</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L0D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L0D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L0D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Facility</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L1D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L1D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L1D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Runway</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L2D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L2D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L2D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Surface 1</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L3D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L3D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L3D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Bunker 1</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L4D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L4D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L4D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Silo</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L5D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L5D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L5D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Frigate</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L6D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L6D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L6D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Surface 2</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L7D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L7D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L7D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Bunker 2</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L8D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L8D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L8D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Statue</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L9D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L9D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L9D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Archives</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L10D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L10D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L10D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Streets</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L11D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L11D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L11D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Depot</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L12D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L12D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L12D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Train</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L13D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L13D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L13D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Jungle</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L14D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L14D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L14D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Control</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L15D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L15D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L15D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Caverns</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L16D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L16D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L16D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Cradle</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L17D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L17D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L17D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Aztec</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L18D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L18D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L18D2" value="9:00"></td>
+</tr>
+<tr>
+<td>Egypt</td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L19D0" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L19D1" value="9:00"></td>
+<td><input type="text" maxLength="4" size="2" onchange="updateTotals()" id="L19D2" value="9:00"></td>
+</tr>
+</table></td>
+
+<td><div style="height:21px; text-align: center; valign: bottom;border: 1px solid black;"><b>POINTS</b></div>
+<table style="width:100px" border="1px solid black" id = "myTable">
+  
+  <tr>
+<td><div id="L0D0Points" width="33%">0</td>
+<td><div id="L0D1Points" width="33%">0</td>
+<td><div id="L0D2Points" width="33%">0</td>
+</tr>
+<tr>
+<td><div id="L1D0Points" >0</td>
+<td><div id="L1D1Points" >0</td>
+<td><div id="L1D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L2D0Points" >0</td>
+<td><div id="L2D1Points" >0</td>
+<td><div id="L2D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L3D0Points" >0</td>
+<td><div id="L3D1Points" >0</td>
+<td><div id="L3D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L4D0Points" >0</td>
+<td><div id="L4D1Points" >0</td>
+<td><div id="L4D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L5D0Points" >0</td>
+<td><div id="L5D1Points" >0</td>
+<td><div id="L5D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L6D0Points" >0</td>
+<td><div id="L6D1Points" >0</td>
+<td><div id="L6D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L7D0Points" >0</td>
+<td><div id="L7D1Points" >0</td>
+<td><div id="L7D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L8D0Points" >0</td>
+<td><div id="L8D1Points" >0</td>
+<td><div id="L8D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L9D0Points" >0</td>
+<td><div id="L9D1Points" >0</td>
+<td><div id="L9D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L10D0Points" >0</td>
+<td><div id="L10D1Points" >0</td>
+<td><div id="L10D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L11D0Points" >0</td>
+<td><div id="L11D1Points" >0</td>
+<td><div id="L11D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L12D0Points" >0</td>
+<td><div id="L12D1Points" >0</td>
+<td><div id="L12D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L13D0Points" >0</td>
+<td><div id="L13D1Points" >0</td>
+<td><div id="L13D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L14D0Points" >0</td>
+<td><div id="L14D1Points" >0</td>
+<td><div id="L14D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L15D0Points" >0</td>
+<td><div id="L15D1Points" >0</td>
+<td><div id="L15D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L16D0Points" >0</td>
+<td><div id="L16D1Points" >0</td>
+<td><div id="L16D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L17D0Points" >0</td>
+<td><div id="L17D1Points" >0</td>
+<td><div id="L17D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L18D0Points" >0</td>
+<td><div id="L18D1Points" >0</td>
+<td><div id="L18D2Points" >0</td>
+</tr>
+<tr>
+<td><div id="L19D0Points" >0</td>
+<td><div id="L19D1Points" >0</td>
+<td><div id="L19D2Points" >0</td>
+</tr>
+</table></td>
+
+</table>
+
+<div id="myTotalTime">My total Time:</div>
+<div id="myTotalPoints">My total Points:</div>
+<p id="testZone"></p>
+
+<script>
+var timeVPointsTotal = [[[[52, 100], [53, 97], [54, 0]], [[76, 100], [77, 94], [78, 87], [79, 68], [80, 33], [81, 0]], [[115, 100], [116, 95], [117, 93], [118, 88], [119, 83], [120, 77], [121, 67], [122, 45], [123, 37], [124, 31], [125, 24], [126, 14], [127, 6], [128, 0]]], [[[43, 100], [44, 88], [45, 69], [46, 47], [47, 32], [48, 13], [49, 0]], [[52, 100], [53, 91], [54, 87], [55, 77], [56, 62], [57, 50], [58, 34], [59, 13], [60, 0]], [[52, 100], [53, 95], [54, 90], [55, 83], [56, 70], [57, 59], [58, 48], [59, 25], [60, 9], [61, 0]]], [[[22, 100], [23, 0]], [[22, 100], [23, 75], [24, 0]], [[28, 100], [32, 97], [35, 93], [36, 89], [37, 86], [38, 82], [39, 61], [40, 0]]], [[[62, 100], [63, 58], [64, 0]], [[107, 100], [108, 95], [109, 87], [110, 72], [111, 50], [112, 25], [113, 0]], [[108, 100], [109, 91], [110, 76], [111, 53], [112, 30], [113, 4], [114, 0]]], [[[16, 100], [17, 97], [18, 0]], [[20, 100], [21, 97], [22, 93], [23, 80], [24, 66], [25, 48], [26, 17], [27, 8], [28, 0]], [[62, 100], [63, 94], [65, 91], [66, 88], [67, 82], [68, 77], [69, 70], [70, 61], [71, 54], [72, 42], [73, 31], [74, 24], [75, 16], [76, 9], [77, 0]]], [[[60, 100], [61, 92], [62, 88], [63, 82], [64, 71], [65, 59], [66, 38], [67, 25], [68, 13], [69, 5], [70, 0]], [[67, 100], [68, 97], [69, 93], [70, 91], [71, 90], [72, 87], [73, 80], [74, 72], [75, 63], [76, 53], [77, 47], [78, 35], [79, 27], [80, 20], [81, 12], [82, 6], [83, 2], [84, 0]], [[81, 100], [82, 95], [83, 93], [84, 92], [85, 90], [87, 89], [88, 87], [89, 79], [90, 74], [91, 71], [92, 64], [93, 60], [94, 57], [95, 52], [96, 48], [97, 44], [98, 40], [99, 35], [100, 32], [101, 27], [102, 24], [103, 22], [104, 19], [106, 16], [107, 14], [108, 10], [109, 7], [110, 2], [111, 1], [112, 0]]], [[[23, 100], [24, 77], [25, 44], [26, 0]], [[58, 100], [59, 97], [61, 94], [62, 92], [63, 83], [64, 79], [65, 68], [66, 58], [67, 50], [68, 38], [69, 32], [70, 27], [71, 15], [72, 4], [73, 0]], [[65, 100], [67, 93], [68, 90], [69, 87], [70, 85], [71, 76], [72, 70], [73, 62], [74, 55], [75, 50], [76, 44], [77, 31], [78, 21], [79, 3], [80, 0]]], [[[46, 100], [47, 91], [48, 29], [49, 23], [50, 1], [51, 0]], [[47, 100], [48, 93], [49, 91], [50, 84], [51, 78], [52, 73], [53, 71], [54, 69], [55, 65], [56, 57], [57, 0]], [[83, 100], [84, 97], [86, 94], [87, 93], [88, 91], [89, 85], [90, 82], [91, 79], [92, 71], [93, 66], [94, 61], [95, 55], [96, 48], [97, 45], [98, 35], [99, 26], [100, 18], [101, 14], [102, 7], [103, 4], [104, 0]]], [[[23, 100], [24, 93], [25, 37], [26, 5], [27, 0]], [[44, 100], [45, 95], [46, 93], [47, 90], [48, 82], [49, 78], [50, 76], [51, 73], [52, 57], [53, 51], [54, 44], [55, 39], [56, 31], [57, 26], [58, 18], [59, 13], [60, 6], [61, 0]], [[54, 100], [55, 95], [56, 92], [57, 91], [58, 90], [59, 87], [60, 83], [61, 81], [62, 78], [63, 75], [64, 73], [65, 71], [66, 68], [67, 63], [68, 54], [69, 51], [70, 46], [71, 41], [72, 39], [73, 34], [74, 29], [75, 25], [76, 22], [77, 14], [78, 11], [79, 7], [80, 2], [81, 1], [82, 0]]], [[[138, 100], [139, 95], [140, 82], [141, 50], [142, 35], [143, 19], [144, 7], [145, 0]], [[138, 100], [139, 88], [140, 63], [141, 38], [142, 20], [143, 0]], [[138, 100], [139, 87], [140, 62], [141, 36], [142, 19], [143, 0]]], [[[15, 100], [16, 95], [17, 0]], [[53, 100], [54, 97], [55, 62], [56, 23], [57, 1], [58, 0]], [[53, 100], [54, 95], [55, 62], [56, 23], [57, 1], [58, 0]]], [[[71, 100], [72, 90], [73, 67], [74, 0]], [[114, 100], [115, 95], [116, 52], [117, 0]], [[114, 100], [115, 97], [116, 53], [117, 0]]], [[[23, 100], [24, 90], [25, 42], [26, 31], [27, 0]], [[39, 100], [40, 94], [41, 70], [42, 53], [43, 35], [44, 17], [45, 3], [46, 0]], [[46, 100], [47, 97], [48, 84], [49, 79], [50, 66], [51, 58], [52, 48], [53, 30], [54, 15], [55, 3], [56, 0]]], [[[57, 100], [59, 95], [60, 92], [61, 89], [62, 87], [63, 86], [64, 82], [65, 79], [66, 74], [67, 64], [68, 57], [69, 50], [70, 46], [71, 38], [72, 33], [73, 25], [74, 14], [75, 11], [76, 4], [77, 0]], [[83, 100], [84, 94], [85, 93], [86, 92], [87, 91], [88, 86], [89, 85], [90, 81], [91, 79], [92, 69], [93, 64], [94, 58], [95, 56], [96, 52], [97, 47], [98, 42], [99, 37], [100, 34], [101, 27], [102, 24], [103, 20], [104, 19], [105, 17], [106, 14], [107, 11], [108, 7], [109, 3], [110, 1], [111, 0]], [[108, 100], [109, 97], [111, 94], [112, 93], [113, 92], [114, 90], [115, 85], [116, 84], [117, 80], [118, 76], [119, 73], [120, 66], [121, 62], [122, 61], [123, 59], [124, 57], [125, 54], [126, 53], [128, 50], [129, 49], [130, 46], [131, 42], [132, 38], [133, 34], [134, 29], [135, 27], [136, 26], [137, 20], [138, 15], [139, 13], [140, 12], [141, 6], [142, 4], [143, 3], [144, 0]]], [[[50, 100], [51, 87], [52, 77], [53, 62], [54, 41], [55, 24], [56, 2], [57, 0]], [[52, 100], [53, 97], [54, 91], [55, 90], [56, 81], [57, 74], [58, 65], [59, 62], [60, 48], [61, 41], [62, 34], [63, 31], [64, 26], [65, 16], [66, 8], [67, 4], [68, 1], [69, 0]], [[53, 100], [54, 97], [55, 92], [56, 91], [57, 84], [58, 75], [59, 66], [60, 63], [62, 62], [63, 56], [64, 52], [65, 49], [66, 44], [67, 40], [68, 35], [69, 33], [70, 32], [71, 29], [72, 23], [73, 19], [74, 16], [75, 10], [76, 7], [77, 5], [78, 3], [79, 1], [80, 0]]], [[[236, 100], [237, 92], [238, 79], [239, 69], [240, 57], [241, 42], [242, 28], [243, 19], [244, 14], [245, 10], [246, 0]], [[243, 100], [245, 97], [246, 93], [247, 92], [248, 86], [249, 85], [250, 83], [251, 76], [252, 75], [253, 74], [254, 70], [255, 66], [256, 64], [257, 62], [258, 56], [259, 53], [260, 47], [261, 41], [262, 39], [263, 35], [264, 34], [265, 29], [266, 25], [267, 19], [268, 17], [269, 14], [270, 12], [271, 5], [272, 1], [273, 0]], [[244, 100], [246, 97], [247, 95], [248, 94], [249, 91], [251, 86], [252, 83], [253, 77], [255, 75], [256, 74], [257, 71], [258, 69], [259, 65], [260, 60], [261, 58], [262, 56], [263, 55], [264, 51], [265, 44], [266, 42], [267, 38], [268, 37], [269, 35], [270, 34], [271, 28], [272, 26], [273, 25], [274, 23], [275, 21], [276, 20], [278, 18], [279, 14], [280, 12], [281, 10], [282, 8], [283, 7], [284, 6], [285, 3], [286, 2], [287, 0]]], [[[61, 100], [62, 86], [63, 32], [64, 0]], [[73, 100], [74, 95], [76, 92], [77, 91], [78, 88], [79, 86], [80, 83], [81, 82], [83, 80], [84, 64], [85, 62], [86, 51], [87, 43], [88, 34], [89, 27], [90, 22], [91, 15], [92, 2], [93, 0]], [[90, 100], [91, 97], [92, 93], [93, 91], [94, 90], [95, 88], [96, 84], [97, 78], [98, 75], [99, 68], [100, 63], [101, 59], [102, 53], [103, 49], [104, 45], [105, 43], [106, 41], [107, 36], [108, 29], [109, 26], [110, 25], [111, 23], [112, 22], [113, 20], [115, 19], [117, 16], [118, 15], [120, 14], [121, 12], [122, 11], [123, 10], [124, 9], [142, 7], [144, 6], [145, 5], [146, 4], [151, 3], [153, 1], [154, 0]]], [[[33, 100], [34, 81], [35, 31], [36, 0]], [[33, 100], [34, 93], [35, 64], [36, 39], [37, 28], [38, 15], [39, 5], [40, 0]], [[33, 100], [34, 93], [35, 64], [36, 43], [37, 35], [38, 26], [39, 18], [40, 12], [41, 6], [42, 3], [43, 0]]], [[[83, 100], [84, 97], [85, 93], [86, 89], [87, 84], [88, 79], [89, 74], [90, 66], [91, 61], [92, 60], [93, 52], [94, 43], [95, 36], [96, 30], [97, 21], [98, 13], [100, 8], [101, 3], [102, 0]], [[90, 100], [91, 95], [92, 94], [93, 92], [94, 91], [95, 87], [96, 85], [97, 83], [99, 79], [100, 73], [101, 71], [102, 67], [103, 56], [104, 52], [105, 44], [106, 34], [107, 33], [108, 29], [110, 28], [111, 24], [112, 20], [113, 15], [114, 14], [115, 13], [117, 8], [118, 6], [119, 4], [120, 2], [121, 0]], [[95, 100], [96, 97], [97, 95], [98, 93], [99, 92], [100, 91], [101, 89], [102, 88], [103, 86], [104, 85], [105, 79], [106, 75], [107, 72], [108, 71], [109, 65], [110, 63], [111, 57], [112, 53], [113, 48], [114, 45], [115, 43], [116, 39], [117, 38], [118, 36], [119, 34], [121, 31], [122, 30], [124, 29], [125, 28], [126, 26], [127, 23], [128, 21], [130, 19], [132, 17], [134, 16], [136, 15], [138, 14], [139, 13], [140, 10], [141, 9], [142, 6], [143, 4], [146, 3], [147, 2], [148, 0]]], [[[44, 100], [45, 95], [46, 80], [47, 65], [48, 39], [49, 18], [50, 0]], [[44, 100], [45, 97], [46, 87], [47, 72], [48, 57], [49, 36], [50, 26], [51, 6], [52, 0]], [[44, 100], [45, 97], [46, 88], [47, 73], [48, 60], [49, 40], [50, 30], [51, 14], [52, 0]]]]
+
+
+
+var table = document.getElementById("myTable");
+var logger = document.getElementById("testZone");
+var totalTimeDom = document.getElementById("myTotalTime");
+var totalPointsDom = document.getElementById("myTotalPoints");
+
+function log(str) {
+	logger.innerHTML = str;
+}
+
+function convertToSeconds(strVal) {
+    var res = strVal.split(":");
+    if (res.length == 2){
+    	return parseInt(res[0])*60+parseInt(res[1]);
+	}
+}
+
+function updateTotals(){
+    totalTime = 0;
+    totalPoints = 0;
+	
+	for(L = 0; L < 20; L++){
+    	for(D = 0; D < 3; D++){
+        	inputVal = document.getElementById("L"+L.toString()+"D"+D.toString()).value;
+            levTime = convertToSeconds(inputVal);
+            totalTime += levTime;
+            pointCell = document.getElementById("L"+L.toString()+"D"+D.toString()+"Points");
+            levPoints = getPointsForTime(L,D,levTime)
+            totalPoints += levPoints;
+            pointCell.innerHTML = levPoints;
+        }
+    }
+	
+    var hour = Math.floor(totalTime/3600);
+    var hourstring = (hour).toString()+"h";
+    var min = Math.floor((totalTime%3600)/60);
+    var minstring = (min).toString()+"m";
+    if (min < 10) {
+    	minstring = "0"+minstring;
+    }
+    var sec = totalTime%60;
+    var secstring = (sec).toString()+"s";
+    if (sec < 10){
+    	secstring = "0"+secstring;
+    }
+    
+    totalTimeDom.innerHTML = "Total time: " +hourstring+minstring+secstring;
+    totalPointsDom.innerHTML = "Total Points: " + totalPoints;
+}
+
+function getPointsForTime(lev,dif,time) {
+    timeVPointsLevel=timeVPointsTotal[lev];
+    timeVPointsDif=timeVPointsLevel[dif];
+    points = 0;
+    for (c = 0; c < timeVPointsDif.length; c++)
+    	if(timeVPointsDif[c][0] == time) return timeVPointsDif[c][1];
+	return 0;
+}
+
+</script>
+
+</body>
+</html>
